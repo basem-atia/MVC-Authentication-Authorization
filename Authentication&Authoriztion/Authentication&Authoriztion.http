@@ -1,0 +1,12 @@
+@Authentication_Authoriztion_HostAddress = http://localhost:5021
+
+POST {{Authentication_Authoriztion_HostAddress}}/api/Account/Dummy-Login
+Content-Type: application/json
+{
+  "userEmail":"basem@gmail.com",
+  "password":"1234567"
+}
+###
+GET {{Authentication_Authoriztion_HostAddress}}/api/Values
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJiYXNlbUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjA4MDM0MTYzLTQzODgtNGVjZC1hZDFjLTY5YmQwYzM4MjZjYSIsImV4cCI6MTc0Mjk0ODg4Nn0.xobb_Qs8G72ek0rQPISbFhmpY_uviXiqO64-aQpvYUQ

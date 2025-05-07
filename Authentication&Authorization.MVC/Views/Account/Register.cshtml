@@ -1,0 +1,24 @@
+﻿@using Authentication_Authoriztion.MVC.Dtos
+@model RegisterDto
+<form asp-action="Register" method="post">
+
+    <div>
+        <label asp-for="userName"></label>
+        <input asp-for="userName" />
+        <span asp-validation-for="userName"></span>
+    </div>
+    <div>
+        <label asp-for="userEmail"></label>
+        <input asp-for="userEmail" />
+        <span asp-validation-for="userEmail"></span>
+    </div>
+    <div>
+        <label asp-for="password"></label>
+        <input asp-for="password" />
+        <span asp-validation-for="password"></span>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
